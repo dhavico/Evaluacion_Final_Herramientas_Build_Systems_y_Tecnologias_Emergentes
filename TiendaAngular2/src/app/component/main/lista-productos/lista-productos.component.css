@@ -1,0 +1,16 @@
+.container{
+    background-color: #fff;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+.container .header h2 i{
+    color: #555;
+}
+.container .header:after{
+    content: '';
+    display: table;
+    clear: both;
+}

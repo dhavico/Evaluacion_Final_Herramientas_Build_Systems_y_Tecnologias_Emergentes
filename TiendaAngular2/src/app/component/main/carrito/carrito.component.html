@@ -1,0 +1,33 @@
+<div class="container p-3">
+    <div class="header">
+        <h2><i class="fas fa-shopping-cart"></i> Carrito de compras <span class="badge badge-success">{{this.dataApi.getTotalCarrito()}}</span></h2>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-9">
+            <div *ngFor="let producto of this.carrito; let i = index">
+                <div class="row item-producto">
+                    <div class="col-3">
+                        <img src="{{producto.imagenUrl}}" class="w-100" alt="...">
+                    </div>
+                    <div class="col-6 detalle">
+                        <h3 class="font-weight-bold text-uppercase">{{producto.nombre}}</h3>
+                        <div><strong>Cantidad:</strong> {{producto.cantidad}}</div>
+                        <div><strong>Precio unitario:</strong> {{producto.precio}}</div>
+                        <div><strong>Subtotal:</strong> S/. {{producto.subtotal}}</div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="totalCarrito">
+                <div>Total a pagar</div>
+                <div class="totalPagar">S/. {{this.totalPagar | number}}</div>
+                <button type="button" class="btn btn-success w-100" (click)="pagarCarrito()"><i class="fas fa-money-bill-wave"></i> PAGAR</button>
+            </div>
+        </div>
+    </div>
+    
+</div>
+    

@@ -1,0 +1,26 @@
+.navbar-brand{
+    font-family: 'Modak', cursive;
+    color:#da3210;
+    font-size: 25px;
+    opacity: 0.8;
+}
+.navbar-brand:focus,
+.navbar-brand:hover{
+    color:#da3210;
+    opacity: 1;
+}
+.navbar-brand i{
+    color:#da3210;
+}
+li.nav-item.active,li.nav-item:hover {
+    background-color: #df593e;
+}
+
+li.nav-item.active a,li.nav-item:hover a {
+    color: #fff !important;
+}
+
+li.nav-item a {
+    color: #df593e !important;
+    font-size: 20px;
+}

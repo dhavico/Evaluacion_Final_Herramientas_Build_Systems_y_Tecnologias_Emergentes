@@ -1,0 +1,43 @@
+<div class="container p-3">
+    <div class="header">
+        <div class="float-left">
+            <h2><i class="fas fa-boxes"></i> Catálogo de productos</h2>
+        </div>
+        <div class="float-right w-25">
+            ¿Qué estás buscando?
+            <input type="text" name="" #txtBuscar class="form-control" placeholder="Buscar producto" (keyup)="filtro(txtBuscar.value)">
+        </div>
+    </div>
+    <hr>
+    <div class="p-2" *ngIf="this.productos.length==0">
+        <h3 class="text-center">No se encontraron registros.</h3>
+    </div>
+    <div class="row p-2">
+        <div class="col-4 mb-3" *ngFor="let item of this.productos; let i = index">
+            <div class="card flex">
+                <img src="{{item.imagenUrl}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title font-weight-bold text-uppercase">{{item.nombre}}</h4>
+                    <p class="card-text"><strong>Precio:</strong> S/.{{item.precio}}</p>
+                    <p class="card-text"><strong>Unidades disponibles:</strong> {{item.disponible}}</p>
+                    <div class="row form-inline">
+                        <div class="col-6">
+                            <a [routerLink]="['../detalle', item.id]" class="btn btn-danger bg-principal border-0"><i class="fas fa-external-link-alt"></i>&nbsp;&nbsp;Ver Más</a>
+                        </div>
+                        <div class="col-6">
+                            <div class="input-group" *ngIf="item.disponible>0">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-success" type="button" id="button-addon1" (click)="addCarrito(item, txCantidad.value)"><i class="fas fa-plus-circle"></i> Añadir</button>
+                                </div>
+                                <input type="number" #txCantidad min="1" max="{{item.disponible}}" value="1" class="form-control" aria-describedby="button-addon1">
+                            </div>
+                            <div class="text-center" *ngIf="item.disponible==0">SIN STOCK</div>
+                            <!-- <a href="#" class="btn btn-success col-6"><i class="fas fa-plus-circle"></i> Añadir</a>
+                            <input type="number" #txCantidad min="1" max="{{item.disponible}}" value="1" class="form-control col-5 offset-1"> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

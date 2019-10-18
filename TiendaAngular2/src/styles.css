@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Modak|Pompiere&display=swap');
+body{
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Pompiere', cursive;
+    font-size: 1.3rem;
+}
+.pointer{
+    cursor: pointer;
+}
