@@ -1,0 +1,18 @@
+[component-detalleproducto] .container{
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 15px auto;
+    margin-top: 80px;
+    margin-bottom: 15px;
+}
+[component-detalleproducto] .container .header h2 svg{
+    color: #555;
+}
+[component-detalleproducto] .container .header:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+[component-detalleproducto] .container .detalle{
+    font-size: 30px;
+}

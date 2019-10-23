@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b2403bbe.chunk.css",
+    "main.js": "/static/js/main.d3903b79.chunk.js",
+    "main.js.map": "/static/js/main.d3903b79.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.91a6de5d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.91a6de5d.js.map",
+    "static/css/2.0624914a.chunk.css": "/static/css/2.0624914a.chunk.css",
+    "static/js/2.b6fc62f2.chunk.js": "/static/js/2.b6fc62f2.chunk.js",
+    "static/js/2.b6fc62f2.chunk.js.map": "/static/js/2.b6fc62f2.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.18acc62b8a8ca464b3d4d0b171e4c9a2.js": "/precache-manifest.18acc62b8a8ca464b3d4d0b171e4c9a2.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.0624914a.chunk.css.map": "/static/css/2.0624914a.chunk.css.map",
+    "static/css/main.b2403bbe.chunk.css.map": "/static/css/main.b2403bbe.chunk.css.map",
+    "static/media/index.css": "/static/media/login-fondo.74468e9f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.91a6de5d.js",
+    "static/css/2.0624914a.chunk.css",
+    "static/js/2.b6fc62f2.chunk.js",
+    "static/css/main.b2403bbe.chunk.css",
+    "static/js/main.d3903b79.chunk.js"
+  ]
+}

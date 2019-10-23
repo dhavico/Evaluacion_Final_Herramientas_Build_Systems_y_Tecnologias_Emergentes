@@ -1,0 +1,16 @@
+[component-listaproductos] .container{
+    background-color: #fff;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+[component-listaproductos] .container .header h2 svg{
+    color: #555;
+}
+[component-listaproductos] .container .header:after{
+    content: '';
+    display: table;
+    clear: both;
+}

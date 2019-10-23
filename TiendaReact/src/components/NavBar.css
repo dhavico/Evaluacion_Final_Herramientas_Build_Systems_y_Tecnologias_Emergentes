@@ -1,0 +1,26 @@
+[component-navbar] .navbar-brand{
+    font-family: 'Modak', cursive;
+    color:#da3210;
+    font-size: 25px;
+    opacity: 0.8;
+}
+[component-navbar] .navbar-brand:focus,
+[component-navbar] .navbar-brand:hover{
+    color:#da3210;
+    opacity: 1;
+}
+[component-navbar] .navbar-brand svg{
+    color:#da3210;
+}
+[component-navbar] .nav-item.active,.nav-item:hover {
+    background-color: #df593e;
+}
+
+[component-navbar] .nav-item.active a.nav-link,.nav-item:hover a.nav-link {
+    color: #fff !important;
+}
+
+[component-navbar] .nav-item a {
+    color: #df593e !important;
+    font-size: 20px;
+}
